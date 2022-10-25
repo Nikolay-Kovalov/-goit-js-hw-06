@@ -12,3 +12,15 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const listRef = document.querySelector('.gallery');
+
+const arr = [];
+for (let i = 0; i < 3; i+=1) {
+  const markup = `<li class="item"><img class="image" src="${images[i].url}" alt="${images[i].alt}"></li>`;
+  console.log(markup)
+  arr.push(markup)
+  console.log(arr)
+}
+listRef.insertAdjacentHTML(`beforeend`, arr.join(''))
+console.log(arr)
