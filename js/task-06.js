@@ -1,7 +1,7 @@
 const inputRef = document.querySelector('#validation-input')
 
 function onBlur() {
-    if (this.getAttribute('data-length') > this.value.length)
+    if (this.getAttribute('data-length') > this.value.length || this.getAttribute('data-length') < this.value.length)
     { inputRef.classList.add('invalid') }
     
     else {

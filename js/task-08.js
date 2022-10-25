@@ -13,7 +13,7 @@ function onSubmit(evt) {
         email: email.value,
         password: password.value
     }
-    console.log(`Имейл: ${obj.email} Пароль: ${obj.password}`)
+    console.log(obj)
     evt.currentTarget.reset()
    
 }
